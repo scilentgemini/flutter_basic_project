@@ -6,15 +6,6 @@ const bannerImg =
 const pfp =
     'https://scilentgemini.com/wp-content/uploads/2023/11/scilent-gemini-side.png';
 
-const description = '''I design, build, edit, experiment, and occasionally wonder why I decided to learn all of this in the first place.
-
-I’ve worked with servers, websites, brands, graphics, video, photography, esports, marketing, and a few things that don’t really fit neatly into a job title.
-
-I like knowing enough to take an idea from “we should make this” to “holy shit, it actually works.”
-
-These days, I mostly work on digital things, from visual identities and websites to motion, content, and whatever interesting problem lands on my desk.''';
-
-
 void main() {
   runApp(
     MaterialApp(
@@ -114,7 +105,6 @@ class ProfileCard extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              // SizedBox(height: 5),
               Text(
                 'Prolly still learning',
                 style: TextStyle(
@@ -123,35 +113,74 @@ class ProfileCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 80,
-                  vertical: 20,
-                ),
+                padding:
+                    const EdgeInsets.symmetric(
+                      horizontal: 60,
+                      vertical: 20,
+                    ),
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment:
+                      MainAxisAlignment
+                          .spaceBetween,
                   children: [
-                    FaIcon(FontAwesomeIcons.facebook),
-                    FaIcon(FontAwesomeIcons.instagram),
+                    FaIcon(
+                      FontAwesomeIcons.facebook,
+                    ),
+                    FaIcon(
+                      FontAwesomeIcons.instagram,
+                    ),
                     FaIcon(FontAwesomeIcons.x),
-                    FaIcon(FontAwesomeIcons.dribbble),
-                    FaIcon(FontAwesomeIcons.globe),
+                    FaIcon(
+                      FontAwesomeIcons.dribbble,
+                    ),
+                    FaIcon(
+                      FontAwesomeIcons.globe,
+                    ),
                   ],
                 ),
               ),
 
-
-              Padding(
-                padding: const EdgeInsets.all(12),
-                child: Text(
-                  description,
-                  style: TextStyle(
-                    fontSize: 14,
+              Row(
+                mainAxisAlignment:
+                    MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                        '40k',
+                        style: TextStyle(
+                          fontSize: 34,
+                        ),
+                      ),
+                      Text(
+                        'FOLLOWING',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
+                  SizedBox(width: 50,),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        '67k',
+                        style: TextStyle(
+                          fontSize: 34,
+                        ),
+                      ),
+                      Text(
+                        'FOLLOWERS',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-
-
             ],
           ),
         ),
