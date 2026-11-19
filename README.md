@@ -30,6 +30,7 @@ A social profile card built from a reference design, using only core widgets:
 - `BoxDecoration`: shape, border, color, shadows
 - Extracting repeated UI into methods
 - `ListView` and `ListView.builder`
+- `GridView` and `GridView.builder`
 
 ## Packages
 
