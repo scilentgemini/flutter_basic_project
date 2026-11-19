@@ -6,6 +6,13 @@ const bannerImg =
 const pfp =
     'https://scilentgemini.com/wp-content/uploads/2023/11/scilent-gemini-side.png';
 
+const amoraa =
+    'https://instagram.fktm3-1.fna.fbcdn.net/v/t51.82787-19/868109156_18164300035493285_7496365841819491305_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=GGRLvjOljTWrVYhAAOnbBQQEcQhobmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=4vhKoRK1zX8Q7kNvwEsBfcm&_nc_oc=AdpebQT5ck5BVPYxmLL9zVZPFZ1ejkEG7NwjlSFxS7sUvQxGREX1gi5HMBYAdhCPu7kTnJfMHs_W3GCRqY38FT81&_nc_zt=24&_nc_ht=instagram.fktm3-1.fna&_nc_gid=X-lmknKM-9ujB0sEkAbv9g&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQRbvEXixZqbFlmT2jLbzhMpxfI6u8UwECj66MtDAOw4tg&oe=6B036DD7';
+const nimu = 'https://instagram.fktm20-1.fna.fbcdn.net/v/t51.82787-19/801439393_18388904248167740_8379020842837852046_n.jpg?stp=dst-jpg_s240x240_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=GKH_xC88TYVpnFRBAI6-8QYQQ0h0bmNDAQAB2402400j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ioYhILirf9MQ7kNvwEJHRi0&_nc_oc=AdqUVoWFRTSiP2A_4HbShYL35qOYxk4XEJ87APpW1QTfUOEmkKeDBY6M1m8bXQia-5NAdCZU3NpH7zRsgbGKIpw1&_nc_zt=24&_nc_ht=instagram.fktm20-1.fna&_nc_gid=yoSvR-08ZTK71BldccdvPw&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSC8W2F7GdVq_fihTdcwK-TFNaPjEh344jrLMzqpO2fUQ&oe=6B04946B';
+const shishi = 'https://instagram.fktm20-1.fna.fbcdn.net/v/t51.2885-19/412566723_282532637710224_2541647031388581943_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&_nc_map=urlgen_bucketless&ig_cache_key=GMNElxiQF4JB9gABADewV0KCvkUjbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=RpK0GFIZSFcQ7kNvwFo2gVs&_nc_oc=AdozkzyYgLBu4dkqTcmDQiCJ_m9e2InzePtKpFJDFFDT9mEext3s0n0gTRHSdGUhKSCqN4eGMAdKnUZ31NTWEgC7&_nc_zt=24&_nc_ht=instagram.fktm20-1.fna&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQSK4UTS4kCLD9fwHrEusOM5jdYPmlDtNw2pKplahU9Vwg&oe=6B046E45';
+const abik = 'https://instagram.fktm20-1.fna.fbcdn.net/v/t51.82787-19/579836465_18326156428241286_3096282737211208713_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&_nc_map=urlgen_bucketless&ig_cache_key=GDGajyKG6QDMihtBAAn0paO_NPgqbmNDAQAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=wvNGumtVvdgQ7kNvwEYKV0x&_nc_oc=Adr1jZFhcboYfzWglpMX9YWy19p1Wfog1d684yc67WYljTzF7wftBVKjzs0eb-qlhU3qr-Ntln_8RpZFfKaOcSpf&_nc_zt=24&_nc_ht=instagram.fktm20-1.fna&_nc_gid=oVHtDHVa34oCtaF3kbA6bQ&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQRXsuz6fVV49PnrvoGz6O-d9b6OU9_Qzk-SMQmE8qicww&oe=6B047DD2';
+const nyx = 'https://instagram.fktm8-1.fna.fbcdn.net/v/t51.2885-19/459727905_2660346350802471_153153126019490391_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&_nc_map=urlgen_bucketless&ig_cache_key=GCHkZhsnFjgnknMJAFfioej0GyACbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy42OTAuQzMifQ%3D%3D&_nc_ohc=yFRLxMTYka8Q7kNvwEYzvvs&_nc_oc=Adrq5Sz0G4-9iP0jWQJGJt011ImwWpl-_VGMdsxr8IMyZDRuQJyu93S557LI_J17smZT-S-1-TdvUrN5IOzj6pNo&_nc_zt=24&_nc_ht=instagram.fktm8-1.fna&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQQZnsTfjD9LjSxoouD9SFiCY358fFHvHMaEf-Rd_C_j0Q&oe=6B046AAF';
+
 void main() {
   runApp(
     MaterialApp(
@@ -140,7 +147,7 @@ class ProfileCard extends StatelessWidget {
                   ],
                 ),
               ),
-
+              //Stat Row
               Row(
                 mainAxisAlignment:
                     MainAxisAlignment.center,
@@ -161,9 +168,11 @@ class ProfileCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 50,),
+                  SizedBox(width: 50),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment:
+                        MainAxisAlignment
+                            .spaceBetween,
                     children: [
                       Text(
                         '67k',
@@ -181,8 +190,61 @@ class ProfileCard extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: 30),
+              Container(
+                width: double.infinity,
+                height: 130,
+                color: Color(0xFFEEF3F7),
+                child: Column(
+                  mainAxisAlignment:
+                      MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 220,
+                      height: 70,
+                      child: Stack(
+                        children: [
+                          avatar(amoraa, 0),
+                          avatar(nimu, 40),
+                          avatar(shishi, 80),
+                          avatar(abik, 120),
+                          avatar(nyx, 160),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Text(
+                      'FOLLOWERS YOU MAY KNOW',
+                      style: TextStyle(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+
+  //Followers you may know avatars
+  Widget avatar(String url, double left) {
+    return Positioned(
+      left: left,
+      child: Container(
+        width: 60,
+        height: 60,
+        clipBehavior: Clip.antiAlias,
+        decoration: BoxDecoration(
+          color: Colors.deepPurpleAccent,
+          shape: BoxShape.circle,
+        ),
+        child: Image.network(
+          url,
+          fit: BoxFit.contain,
         ),
       ),
     );
