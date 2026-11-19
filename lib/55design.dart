@@ -85,8 +85,6 @@ class ProfileImage extends StatelessWidget {
   }
 }
 
-
-
 class ProfileCard extends StatelessWidget {
   const ProfileCard({super.key});
 
@@ -137,19 +135,11 @@ class ProfileCard extends StatelessWidget {
                       MainAxisAlignment
                           .spaceBetween,
                   children: [
-                    FaIcon(
-                      FontAwesomeIcons.facebook,
-                    ),
-                    FaIcon(
-                      FontAwesomeIcons.instagram,
-                    ),
-                    FaIcon(FontAwesomeIcons.x),
-                    FaIcon(
-                      FontAwesomeIcons.dribbble,
-                    ),
-                    FaIcon(
-                      FontAwesomeIcons.globe,
-                    ),
+                    socialIcon(FontAwesomeIcons.facebook),
+                    socialIcon(FontAwesomeIcons.instagram),
+                    socialIcon(FontAwesomeIcons.x),
+                    socialIcon(FontAwesomeIcons.dribbble),
+                    socialIcon(FontAwesomeIcons.globe),
                   ],
                 ),
               ),
@@ -233,7 +223,8 @@ class ProfileCard extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor:
+                      Colors.deepPurple,
                   foregroundColor: Colors.white,
                   // shape: StadiumBorder()
                 ),
@@ -244,6 +235,20 @@ class ProfileCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  //social icons
+  Container socialIcon(FaIconData icon) {
+    return Container(
+      width: 36,
+      height: 36,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        border: Border.all(color: Colors.grey),
+      ),
+      child: FaIcon(icon),
     );
   }
 
