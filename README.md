@@ -1,17 +1,62 @@
 # basic_widgets
 
-A new Flutter project.
+A Flutter practice project where I'm learning the basics of building UIs, one widget at a time. Each file in `lib/` is a small exercise, and the code is written to be simple and readable rather than clever.
 
-## Getting Started
+## What's in here
 
-This project is a starting point for a Flutter application.
+### Profile card design (`lib/55design.dart`)
 
-A few resources to get you started if this is your first Flutter project:
+A social profile card built from a reference design, using only core widgets:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- **Banner image** loaded from the network, darkened with `color` and `BlendMode.darken`
+- **Overlapping layout** with `Stack` and `Positioned`: banner at the back, card on top, avatar over the card's edge
+- **Circular avatar** clipped with `clipBehavior` and `BoxShape.circle`, with layered glow rings made from stacked `boxShadow`s
+- **Social icon row** with circled icons (`font_awesome_flutter`)
+- **Follower stats** built with `Row` and `Column`
+- **"Followers you may know" band** with overlapping circular photos placed using `Stack` and `Positioned`
+- **Follow button** styled with `ElevatedButton.styleFrom`
+- Repeated pieces (avatars, social icons) pulled out into small helper methods
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Other practice files
+
+- ListView and ListView.builder exercises
+
+## Concepts practiced
+
+- `Column`, `Row`, and their main axis / cross axis alignment
+- `Stack` and `Positioned` for layering widgets
+- `child` vs `children`
+- `Container`, `Padding`, `SizedBox`, `Card`
+- `BoxDecoration`: shape, border, color, shadows
+- Extracting repeated UI into methods
+- `ListView` and `ListView.builder`
+
+## Packages
+
+| Package | Used for |
+| --- | --- |
+| `material_ui` | Material widgets |
+| `font_awesome_flutter` (11.0.0+) | Brand icons (Instagram, Dribbble, X, ...) |
+
+Use `FaIcon(...)` for Font Awesome icons. The plain `Icon(...)` widget only accepts Material icons.
+
+## Running the project
+
+```bash
+git clone https://github.com/scilentgemini/flutter_basic_project.git
+cd flutter_basic_project
+flutter pub get
+flutter run
+```
+
+To run a specific file:
+
+```bash
+flutter run lib/55design.dart
+```
+
+Built and tested with Flutter 3.50.
+
+## Notes
+
+- Images in the profile card load from external URLs. Links from social media CDNs expire, so a circle may show up blank later. Replace those with stable image links if that happens.
