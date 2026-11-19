@@ -1,3 +1,4 @@
+import 'package:basic_widgets/grid_view_example.dart';
 import 'package:basic_widgets/list_view_example.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListViewExample(),
+      home: GridViewExample(),
     );
   }
 }
