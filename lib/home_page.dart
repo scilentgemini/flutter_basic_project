@@ -1,25 +1,37 @@
 import 'package:material_ui/material_ui.dart';
 
-const url = 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Swayambhunath_2018.jpg/1280px-Swayambhunath_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail';
-const url1 = 'https://www.pelago.com/img/products/NP-Nepal/private-tour-of-godawari-botanical-garden-including-lunch/ba044d57-4d09-42d0-8e64-7e61998165d6_private-tour-of-godawari-botanical-garden-including-lunch-medium.jpg';
-const url2 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuyMZQxKqOX09jxtoqRVprF8U9TwL2NAntY0UoO8OBYbLqlmEzdc6G5r4&s=10';
+const url =
+    'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Swayambhunath_2018.jpg/1280px-Swayambhunath_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail';
+const url1 =
+    'https://www.pelago.com/img/products/NP-Nepal/private-tour-of-godawari-botanical-garden-including-lunch/ba044d57-4d09-42d0-8e64-7e61998165d6_private-tour-of-godawari-botanical-garden-including-lunch-medium.jpg';
+const url2 =
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuyMZQxKqOX09jxtoqRVprF8U9TwL2NAntY0UoO8OBYbLqlmEzdc6G5r4&s=10';
 const url3 =
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpZqHDmxxMeXmjGPrk5e5BHhIPqAbGn7dPD-wC5jB86EznQ4l_vYOoSs&s=10';
 const sundarban =
-'''The Sundarbans mangrove forest, one of the largest such forests in the world (140,000 ha), lies on the delta of the Ganges, Brahmaputra and Meghna rivers on the Bay of Bengal. It is adjacent to the border of India’s Sundarbans World Heritage site inscribed in 1987. The site is intersected by a complex network of tidal waterways, mudflats and small islands of salt-tolerant mangrove forests, and presents an excellent example of ongoing ecological processes. The area is known for its wide range of fauna, including 260 bird species, the Bengal tiger and other threatened species such as the estuarine crocodile and the Indian python.''';
+    '''The Sundarbans mangrove forest, one of the largest such forests in the world (140,000 ha), lies on the delta of the Ganges, Brahmaputra and Meghna rivers on the Bay of Bengal. It is adjacent to the border of India’s Sundarbans World Heritage site inscribed in 1987. The site is intersected by a complex network of tidal waterways, mudflats and small islands of salt-tolerant mangrove forests, and presents an excellent example of ongoing ecological processes. The area is known for its wide range of fauna, including 260 bird species, the Bengal tiger and other threatened species such as the estuarine crocodile and the Indian python.''';
 
+const images = [url, url1, url2, url3];
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() =>
+      _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int index = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home Page'),),
+      appBar: AppBar(title: Text('Home Page')),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment:
-          CrossAxisAlignment.start,
+              CrossAxisAlignment.start,
           //mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             _imageSection(),
@@ -44,12 +56,12 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Row(
         mainAxisAlignment:
-        MainAxisAlignment.spaceAround,
+            MainAxisAlignment.spaceAround,
         children: [
           Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment:
-            MainAxisAlignment.center,
+                MainAxisAlignment.center,
             children: [
               Icon(
                 Icons.call,
@@ -73,7 +85,7 @@ class HomePage extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment:
-            MainAxisAlignment.center,
+                MainAxisAlignment.center,
             children: [
               Icon(
                 Icons.near_me,
@@ -97,7 +109,7 @@ class HomePage extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment:
-            MainAxisAlignment.center,
+                MainAxisAlignment.center,
             children: [
               Icon(
                 Icons.share,
@@ -130,7 +142,7 @@ class HomePage extends StatelessWidget {
         children: [
           Column(
             crossAxisAlignment:
-            CrossAxisAlignment.start,
+                CrossAxisAlignment.start,
             children: [
               Text(
                 'The Sundarbans',
@@ -161,7 +173,7 @@ class HomePage extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Image.network(
-          url3,
+          images[index],
           width: double.infinity,
           height: 350,
           fit: BoxFit.cover,
@@ -191,6 +203,32 @@ class HomePage extends StatelessWidget {
                 color: Colors.red,
               ),
             ),
+          ),
+        ),
+        if(index > 0)
+        Positioned(
+          left: 15,
+          bottom: 15,
+          child: ElevatedButton(
+            onPressed: () {
+              setState(() {
+                index--;
+              });
+            },
+            child: Text('Previous'),
+          ),
+        ),
+        if(index < images.length -1)
+        Positioned(
+          right: 15,
+          bottom: 15,
+          child: ElevatedButton(
+            onPressed: () {
+              setState(() {
+                index++;
+              });
+            },
+            child: Text('Next'),
           ),
         ),
       ],
