@@ -31,6 +31,7 @@ A social profile card built from a reference design, using only core widgets:
 - Extracting repeated UI into methods
 - `ListView` and `ListView.builder`
 - `GridView` and `GridView.builder`
+- `Navigate` with `Navigator.push`, and `Navigator.pushReplacement`
 
 ## Packages
 
