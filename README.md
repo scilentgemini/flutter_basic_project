@@ -16,6 +16,15 @@ A social profile card built from a reference design, using only core widgets:
 - **"Followers you may know" band** with overlapping circular photos placed using `Stack` and `Positioned`
 - **Follow button** styled with `ElevatedButton.styleFrom`
 - Repeated pieces (avatars, social icons) pulled out into small helper methods
+- 
+### Home page with switchable banner (`lib/home_page.dart`)
+
+A travel-style page where the banner image can be switched with next and previous buttons:
+
+- **List of image URLs** with an `index` variable that tracks which one is showing
+- **`StatefulWidget`** and `setState` to redraw the banner when the index changes
+- **Next and previous buttons** placed over the banner with `Stack` and `Positioned`
+- **Collection `if`** inside the `children` list, so each button only exists when there's an image to go to
 
 ### Other practice files
 
@@ -33,7 +42,9 @@ A social profile card built from a reference design, using only core widgets:
 - `GridView` and `GridView.builder`
 - `Navigate` with `Navigator.push`, and `Navigator.pushReplacement`
 - Stateless and Stateful Widgets
-- Counter App made using `StatefulWisget`, `floatingActionButton`, and `setState`
+- Counter App made using `StatefulWidget`, `floatingActionButton`, and `setState`
+- Showing and hiding widgets with a collection `if`
+- Lists and index-based access (`images[index]`)
 
 ## Packages
 
