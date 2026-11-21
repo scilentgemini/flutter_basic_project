@@ -1,5 +1,8 @@
 import 'package:material_ui/material_ui.dart';
 
+const url = 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Swayambhunath_2018.jpg/1280px-Swayambhunath_2018.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail';
+const url1 = 'https://www.pelago.com/img/products/NP-Nepal/private-tour-of-godawari-botanical-garden-including-lunch/ba044d57-4d09-42d0-8e64-7e61998165d6_private-tour-of-godawari-botanical-garden-including-lunch-medium.jpg';
+const url2 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuyMZQxKqOX09jxtoqRVprF8U9TwL2NAntY0UoO8OBYbLqlmEzdc6G5r4&s=10';
 const url3 =
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpZqHDmxxMeXmjGPrk5e5BHhIPqAbGn7dPD-wC5jB86EznQ4l_vYOoSs&s=10';
 const sundarban =
@@ -7,7 +10,7 @@ const sundarban =
 
 
 class HomePage extends StatelessWidget {
-  const new({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -190,15 +193,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          width: 100,
-          height: 100,
-          decoration: BoxDecoration(
-            color: Colors.deepPurple,
-            shape: BoxShape.circle,
-            // image:
-          ),
-        )
       ],
     );
   }

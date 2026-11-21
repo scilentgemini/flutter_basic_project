@@ -32,6 +32,8 @@ A social profile card built from a reference design, using only core widgets:
 - `ListView` and `ListView.builder`
 - `GridView` and `GridView.builder`
 - `Navigate` with `Navigator.push`, and `Navigator.pushReplacement`
+- Stateless and Stateful Widgets
+- Counter App made using `StatefulWisget`, `floatingActionButton`, and `setState`
 
 ## Packages
 

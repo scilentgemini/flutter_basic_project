@@ -1,3 +1,4 @@
+import 'package:basic_widgets/counter_app.dart';
 import 'package:basic_widgets/grid_view_example.dart';
 import 'package:basic_widgets/home_page.dart';
 import 'package:basic_widgets/list_view_example.dart';
@@ -51,6 +52,19 @@ class MenuPage extends StatelessWidget {
                 );
               },
               child: Text('GirdView'),
+            ),
+            //Counter App
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        CounterApp(),
+                  ),
+                );
+              },
+              child: Text('Counter App'),
             ),
           ],
         ),
